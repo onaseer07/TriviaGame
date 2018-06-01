@@ -9,11 +9,11 @@ $(document).ready(function() {
     //Create a function to setup initial quiz screen html and show button that will start the quiz
     function initialScreen() {
         $("body").html(`<div class = "jumbotron text-center"><div class = "Quiz">
-        <h1 class = title>Trivia Quiz!</h1><br><button id = startButton>Play</button></div>`)
+        <h1 class = title>State Capitals Trivia Quiz!</h1><br><button id = startButton>Play</button></div>`)
         $("#startButton").on("click", function(){
         $("body").html(`<div class = "jumbotron text-center">
             <div class = "Quiz">
-            <h1 class = "title">Trivia Quiz!</h1>
+            <h1 class = "title">State Capitals Trivia Quiz!</h1>
             <p>Time Remaining: <span id = "timer">10</span></p>
             <p class = "question"></p>
             <p class = "choices"></p>
@@ -91,7 +91,7 @@ $(document).ready(function() {
     // ------------------------------------------------------------------------------------------------------------------- //
     let winMessage = function(){
         $("body").html(`<div class = "jumbotron text-center Quiz">
-        <h1 class = title>Trivia Quiz!</h1>`+"<p class = message>Right! The correct answer was: " + Quiz.A[quizCounter]+"</p>");
+        <h1 class = title>State Capitals Trivia Quiz!</h1>`+"<p class = message>Right! The correct answer was: " + Quiz.A[quizCounter]+"</p>");
         correctAnswerTally++;
         quizCounter++;
         timerValue = 10;
@@ -99,7 +99,7 @@ $(document).ready(function() {
     };
     let loseMessage = function(){
         $("body").html(`<div class = "jumbotron text-center Quiz">
-        <h1 class = title>Trivia Quiz!</h1>`+"<p class = message>Wrong! The correct answer was:  " + Quiz.A[quizCounter]+"</p>");
+        <h1 class = title>State Capitals Trivia Quiz!</h1>`+"<p class = message>Wrong! The correct answer was:  " + Quiz.A[quizCounter]+"</p>");
         incorrectAnswerTally++;
         quizCounter++;
         timerValue = 10;
@@ -108,7 +108,7 @@ $(document).ready(function() {
     };
     let loseTimeoutMessage = function(){
         $("body").html(`<div class = "jumbotron text-center Quiz">
-        <h1 class = title>Trivia Quiz!</h1>`+"<p class = message>Time's Up! The correct answer was:  " + Quiz.A[quizCounter]+"</p>");
+        <h1 class = title>State Capitals Trivia Quiz!</h1>`+"<p class = message>Time's Up! The correct answer was:  " + Quiz.A[quizCounter]+"</p>");
         unansweredTally++;
         quizCounter++;
         timerValue = 10;
@@ -120,7 +120,7 @@ $(document).ready(function() {
     let nextQuestion = function(){
         $("body").html(`<div class = "jumbotron text-center">
             <div class = "Quiz">
-            <h1 class = "title">Trivia Quiz!</h1>
+            <h1 class = "title">State Capitals Trivia Quiz!</h1>
             <p>Time Remaining: <span id = "timer">10</span></p>
             <p class = "question"></p>
             <p class = "choices"></p>
@@ -134,7 +134,7 @@ $(document).ready(function() {
     //Create displayResults function to show total score and button to restart the game
     let displayResults = function() {
         $("body").html(`<div class = "jumbotron text-center Quiz">
-                    <h1 class = title>Trivia Quiz!</h1>`+"<div class = results><h2>You scored: "+parseInt(((Quiz.Q.length-(incorrectAnswerTally+unansweredTally))/Quiz.Q.length)*100)+"%</h2></div>"+"<div class = results> Correct Answers: " + correctAnswerTally + "</div>" + "<div class = results> Incorrect Answers: " + incorrectAnswerTally + "</div>" + "<div class = results> Unanswered: " + unansweredTally + "</div>"+"<div class = reset><button id = resetButton>Start Over?</button></div>"); 
+                    <h1 class = title>State Capitals Trivia Quiz!</h1>`+"<div class = results><h2>You scored: "+parseInt(((Quiz.Q.length-(incorrectAnswerTally+unansweredTally))/Quiz.Q.length)*100)+"%</h2></div>"+"<div class = results> Correct Answers: " + correctAnswerTally + "</div>" + "<div class = results> Incorrect Answers: " + incorrectAnswerTally + "</div>" + "<div class = results> Unanswered: " + unansweredTally + "</div>"+"<div class = reset><button id = resetButton>Start Over?</button></div>"); 
                    }
 
     //Create a function to restart the quiz screen html and show button that will start the quiz
@@ -146,7 +146,7 @@ $(document).ready(function() {
         quizCounter = 0;
         $("body").html(`<div class = "jumbotron text-center">
             <div class = "Quiz">
-            <h1 class = "title">Trivia Quiz!</h1>
+            <h1 class = "title">State Capitals Trivia Quiz!</h1>
             <p>Time Remaining: <span id = "timer">10</span></p>
             <p class = "question"></p>
             <p class = "choices"></p>
