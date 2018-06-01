@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Trivia Game</title>
+    <title>Trivia Quiz</title>
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
-    <div id ="title">Trivia Game</div>
-    <div id = "start"><button>Start Game</button></div>
-    <div id = "timer"></div>
-    <div id = "question"></div>
-    <div id = "answer"></div>
-    <div id = "correctAnswer"></div>
-    <div id = "counter"></div>
-<script src="assets/javascript/game.js"></script>
+    <div class = "jumbotron text-center">
+        <div class = "Quiz">
+            <h1 class = "title">Trivia Quiz!</h1>
+            <p>Time Remaining: <span id = "timer">10</span></p>
+            <p class = "question"></p>
+            <p class = "choices"></p>
+            <p class = "answer"></p>
+            <p class = "result"></p>
+        </div>
+    </div>
+
+    <script src="assets/javascript/game.js"></script>
 </body>
 </html>
