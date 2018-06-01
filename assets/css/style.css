@@ -1,23 +1,31 @@
-.title {
-    font-family: 'Julius Sans One', sans-serif;
-};
-.jumbotron {
-    height: 50%;
+body {
+    background-color: #eee;
 }
-#startButton, #choicesButton, #resetButton {
-    background-color: black;
+.jumbotron {
+    height: auto;
+}
+.jumbotron .title {
+    background-color: #1d262e;
+    font-family: 'Julius Sans One',sans-serif;
+    font-weight: bolder;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.choices button, #startButton, #resetButton {
+    background-color: #1d262e;
     color: white;
     border: 0px;
     padding: 10px;
     margin: 10px;
     width: 150px;
     font-size: 20px;
-};
-#startButton, #choicesButton, #resetButtonn:hover {
-    background-color: #fff;
-    color: black;
-    border: 0px;
-    padding: 10px;
-    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.message {
     font-size: 20px;
-};
+}
+.results {
+    font-size: 20px;
+}
+
+

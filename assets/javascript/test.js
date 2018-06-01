@@ -99,7 +99,7 @@ let loseTimeoutMessage = function(){
 
 //Create nextQuestion function to setup html structure and initialize next question function
 let nextQuestion = function(){
-    $("body").html(`<div class = "Quiz">
+    $("body").html(`<div class = "jumbotron text-center Quiz">
     <h1 class = "title">Trivia Quiz!</h1>
     <p>Time Remaining: <span id = "timer">10</span></p>
     <p class = "question"></p>
@@ -120,7 +120,7 @@ function initialScreen() {
     $("body").html(`<div class = Quiz>
     <h1 class = title>Trivia Quiz!</h1><br><button id = startButton>Play</button>`)
     $("#startButton").on("click", function(){
-    $("body").html(`<div class = "Quiz">
+    $("body").html(`<div class = "jumbotron text-center Quiz">
     <h1 class = "title">Trivia Quiz!</h1>
     <p>Time Remaining: <span id = "timer">10</span></p>
     <p class = "question"></p>
